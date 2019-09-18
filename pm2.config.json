@@ -3,6 +3,7 @@
     {
       "name": "test_server",
       "script": "./server/app.ts",
+      "exec_mode": "fork",
       "watch": [
         "server"
       ],
