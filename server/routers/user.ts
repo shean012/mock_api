@@ -8,6 +8,8 @@ router.get('/', testCtrl.getName);
 
 router.get('/getData', testCtrl.getData);
 
+router.post('/createTest', testCtrl.createTest);
+
 module.exports = router.routes();
 
 

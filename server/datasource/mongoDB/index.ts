@@ -1,4 +1,5 @@
 import * as mongoose from 'mongoose';
+
 interface MongoConfig {
   host: string;
   port: number;
@@ -26,6 +27,7 @@ class MongoDBService {
     } = this.config;
     mongoose.connect(`mongodb://${user}:${pwd}@${host}:${port}/${database}`, {
       useCreateIndex: true,
+      useUnifiedTopology: true,
       useNewUrlParser: true
     }, (err) => {
       if (err) {

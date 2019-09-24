@@ -8,6 +8,10 @@
   dependencies:
     vary "^1.1.2"
 
+"@meanie/mongoose-to-json@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@meanie/mongoose-to-json/-/mongoose-to-json-2.4.0.tgz#b1593ef2fd514f5a6f56379cef06032ee21a0d80"
+
 "@types/accepts@*":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
@@ -19,6 +23,12 @@
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.17.0.tgz#9f5c9d9bd04bb54be32d5eb9fc0d8c974e6cf58c"
   dependencies:
     "@types/connect" "*"
+    "@types/node" "*"
+
+"@types/bson@*":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/bson/-/bson-4.0.0.tgz#9073772679d749116eb1dfca56f8eaac6d59cc7a"
+  dependencies:
     "@types/node" "*"
 
 "@types/connect@*":
@@ -129,6 +139,20 @@
 "@types/mime@*":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
+
+"@types/mongodb@*":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@types/mongodb/-/mongodb-3.3.3.tgz#749ce52f1d958601dcc4cea3e2839a734c2723e2"
+  dependencies:
+    "@types/bson" "*"
+    "@types/node" "*"
+
+"@types/mongoose@^5.5.17":
+  version "5.5.17"
+  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.5.17.tgz#1f8eb3799368ae266758d2df1bd1a7cfca0f6875"
+  dependencies:
+    "@types/mongodb" "*"
+    "@types/node" "*"
 
 "@types/node@*":
   version "12.6.9"
