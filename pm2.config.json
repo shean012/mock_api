@@ -1,9 +1,12 @@
 {
-  "app": [
+  "apps": [
     {
-      "name": "test_server",
+      "name": "app",
       "script": "./server/app.ts",
       "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "production"
+      },
       "watch": [
         "server"
       ],
@@ -11,14 +14,10 @@
         "node_modules",
         "logs"
       ],
-      "watch_options": {
-        "followSymlinks": false
-      },
-      "error_file": "./logs/app-err.log",
-      "out_file": "./logs/app-out.log",
-      "env": {
-        "NODE_ENV": "production"
-      }
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "merge_logs": true,
+      "error_file": "./logs/pm2/error.log",
+      "out_file": "./logs/pm2/out.log"
     }
   ]
 }
