@@ -43,9 +43,9 @@ class MongoDBService {
 
   private setMongoDBConfig(): MongoConfig {
     return {
-      host: '152.32.135.147',
+      host: 'www.shean.net.cn',
       port: 27017,
-      database: 'test',
+      database: 'testDB',
       user: 'shean',
       pwd: 'shean012'
     }
