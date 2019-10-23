@@ -41,4 +41,10 @@ app.use(require('./routers/user'));
 
 app.listen(3000);
 
+// close db connection
+// app.use(async (ctx: IContext, next: any) => {
+//   mongoService.close();
+//   return next();
+// });
+
 console.log("Server running on port 3000");

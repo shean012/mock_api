@@ -33,7 +33,7 @@ class MongoDBService {
       if (err) {
         console.error('connect to %s error: ', err.message);
         process.exit(1);
-      } else console.log('connect to mongo db')
+      }
     });
   }
 

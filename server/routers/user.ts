@@ -10,6 +10,10 @@ router.get('/getData', testCtrl.getData);
 
 router.post('/createTest', testCtrl.createTest);
 
+router.get('/getLoaction', testCtrl.getLocation);
+
+router.get('/getCORSlocation', testCtrl.getCORSlocation);
+
 module.exports = router.routes();
 
 
