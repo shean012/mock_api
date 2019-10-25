@@ -37,7 +37,7 @@ export const getLocation = async (ctx: IContext, next: any) => {
 }
 
 export const getCORSlocation = async (ctx: IContext, next: any) => {
-  let data = await axios.get('http://d7jxd9.natappfree.cc/merchant/district/getOrderMerchant')
+  let data = await axios.get('http://activity.xm-space.com/merchant/district/getOrderMerchant')
   ctx.body = data.data
 }
 
